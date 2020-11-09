@@ -8,7 +8,9 @@
   </head>
   <body>
     <div id="editor">
+      <!-- 사용자에게서 글자를 입력받는다.-->
       <textarea :vaule="input" @input="update"></textarea>
+      <!-- 마크다운 함수를 적용한 글자를 화면에 출력한다.-->
       <div v-html="compiledMarkdown"></div>
     </div>
 
